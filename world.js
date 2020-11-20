@@ -27,7 +27,7 @@ lookupc.addEventListener("click", function(e) {
     e.preventDefault();
     console.log("did it again");
     var httpRequest = new XMLHttpRequest();
-    var url = "http://localhost/info2180-lab5/world.php";
+    var url = "http://localhost/info2180-lab5/world.php"+"&content=cities";
     var data = input.value;
     var exec = '?country=' + data;
     httpRequest.onreadystatechange = function() {
